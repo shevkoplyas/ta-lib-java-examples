@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ta-lib-java</groupId>
+    <artifactId>examples</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <dependencies>
+
+        <!-- Example on adding java maven dependency into the pom.xml file:
+        Let's add "TA-Lib Technical Analysis Library"
+          1) search for: ta-lib maven
+          2) in the result list preferraby search ones from mvnrepository.com
+          3) very 1st found link: https://mvnrepository.com/artifact/com.tictactec/ta-lib/0.4.0
+             contains multiple examples (for Maven, Gradle, SBT, Ivy, Grape, etc.)
+             copy paste it here (including the comment-link above it like this one below:
+        -->
+        <!-- https://mvnrepository.com/artifact/com.tictactec/ta-lib -->
+        <dependency>
+            <groupId>com.tictactec</groupId>
+            <artifactId>ta-lib</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+
+        <!-- 
+        we read csv input file(s) in TA-Lib-Java-Examples/src/main/java/KaufmanAdaptiveMovingAverageExample.java
+        -->
+        <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>4.0</version>
+        </dependency>
+
+    </dependencies>
+    <name>talib-examples</name>
+</project>

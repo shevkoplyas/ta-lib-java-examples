@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# download dependencies, so we can run from CLI
+# see: https://stackoverflow.com/a/7912247/7022062
+mvn dependency:copy-dependencies
+
+# run compiled class along with classpath pointing to all the dependencies
+java -cp target/examples-1.0-SNAPSHOT.jar:target/dependency/*:target/classes KaufmanAdaptiveMovingAverageExample

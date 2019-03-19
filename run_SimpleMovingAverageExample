@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ ! -d ./target/classes/com/tictactec/ ]; then
+    echo "copying com/tictactec/ta/lib classes to build folder..."
+    sleep 1
+    cp -r src/main/java/com target/classes/
+fi
+
+cd target/classes/
+java SimpleMovingAverageExample
