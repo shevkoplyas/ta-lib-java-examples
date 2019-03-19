@@ -1,6 +1,7 @@
 TA-Lib-Java-Examples
 ====================
 
+<pre>
 Couple usage examples of the TA-LIb Java API.
 Originally found here: https://github.com/ishanthilina/TA-Lib-Java-Examples.git
 
@@ -46,3 +47,5 @@ output of ./run_SimpleMovingAverageExample:
 
 To compare ta-lib calculated SMA and EMA vs. expected output see also this google spreadsheet:
 https://docs.google.com/spreadsheets/d/1JDLc1X1zPSWqKnut10nltimgoGzz9KMG5q6XpdRz6hw/edit?usp=sharing
+
+</pre>
