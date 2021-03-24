@@ -1,3 +1,4 @@
+package ca.dimon.speculant.talibexample;
 
 import com.tictactec.ta.lib.Core;
 import com.tictactec.ta.lib.MInteger;

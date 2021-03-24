@@ -1,10 +1,11 @@
 #!/bin/bash
 
-if [ ! -d ./target/classes/com/tictactec/ ]; then
-    echo "copying com/tictactec/ta/lib classes to build folder..."
-    sleep 1
-    cp -r src/main/java/com target/classes/
-fi
-
-cd target/classes/
-java SimpleMovingAverageExample
+# Run particular class (by maven exec plugin)
+#     https://stackoverflow.com/questions/9846046/run-main-class-of-maven-project
+#
+# This will run your class in the JVM. You can use -Dexec.args="arg0 arg1" to pass arguments.
+#
+# If you're on Windows, apply quotes for exec.mainClass and exec.args:
+#     mvn exec:java -D"exec.mainClass"="com.example.Main"
+#
+mvn exec:java -Dexec.mainClass="ca.dimon.speculant.talibexample.SimpleMovingAverageExample"

@@ -1,3 +1,4 @@
+package ca.dimon.speculant.talibexample;
 
 import com.tictactec.ta.lib.Core;
 import com.tictactec.ta.lib.MAType;
@@ -54,12 +55,9 @@ public class KaufmanAdaptiveMovingAverageExample {
 
     PrintWriter pw_result_file;
 
+    private String output_csv_filename = "/tmp/sliding_slit_result.csv";
+
     public KaufmanAdaptiveMovingAverageExample() {
-//        String output_csv_filename = "output/sliding_slit_result.csv";
-
-// debug:
-        String output_csv_filename = "/Users/dmitry/_my/java/talib/TA-Lib-Java-Examples/output/sliding_slit_result.csv";
-
 
         // https://stackoverflow.com/questions/8210616/printwriter-append-method-not-appending
         try {
@@ -190,6 +188,7 @@ public class KaufmanAdaptiveMovingAverageExample {
             e.printStackTrace();
         }
 
+        System.out.println("Result will be stored to file: " + output_csv_filename);
     }
 
     private void process_day() {
